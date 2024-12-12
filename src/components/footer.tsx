@@ -1,4 +1,4 @@
-export default function Footer(): JSX.Element {
+export function Footer(): JSX.Element {
   return (
     <footer>
       <p>
