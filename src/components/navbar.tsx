@@ -22,7 +22,7 @@ export function Navbar(): JSX.Element {
         <div className="">
           <div className={styles.navbar_items}>
             <Link href={"/"}>Home</Link>
-            <Link href={"/Sobre"}>Sobre</Link>
+            <Link href={"/about"}>Sobre</Link>
           </div>
         </div>
       </nav>
