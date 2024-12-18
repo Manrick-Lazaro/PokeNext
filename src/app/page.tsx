@@ -5,8 +5,8 @@ import { Card } from "@/components/card";
 import styles from "../styles/home.module.css";
 
 export default async function Home() {
-  const maxPokemons = 250;
   const api = "https://pokeapi.co/api/v2/pokemon/";
+  const maxPokemons = 250;
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
   const data = await res.json();
