@@ -1,5 +1,7 @@
 import Image from "next/image";
 import pokeballImg from "../../public/images/pokeball.png";
+import type { Pokemon } from "@/types/pokemon";
+import { Card } from "@/components/card";
 import styles from "../styles/home.module.css";
 
 export default async function Home() {
@@ -24,8 +26,8 @@ export default async function Home() {
       </div>
 
       <div className={styles.pokemon_container}>
-        {data.results.map((pokemon) => (
-          <p key={pokemon.id}>{pokemon.name}</p>
+        {data.results.map((pokemon: Pokemon) => (
+          <Card pokemon={pokemon} key={pokemon.id} />
         ))}
       </div>
     </div>
